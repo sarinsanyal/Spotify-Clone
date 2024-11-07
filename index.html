@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Web Player: Music for Everyone</title>
+    <link rel="icon" type="image/x-icon" href="https://open.spotify.com/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-navbar">
+            <a href="http://127.0.0.1:3000">
+                <img id="logo" src="assets/images/logo.svg" alt="logo">
+            </a>
+            <span class="credits">Made by Sarin Sanyal</span>
+        </div>
+        <div class="mid-navbar">
+            <button title="Home" class="home">
+                <img id="home" src="assets/images/home.svg" alt="home">
+            </button>
+            <form class="search-form">
+                <input type="text" class="search" placeholder="What do you want to play?">
+            </form>
+        </div>
+        <div class="right-navbar">
+            <div title="What's New" class="notifications">
+                <img src="assets/images/notifications.svg">
+            </div>
+            <div title="Your Profile" class="profile">
+                S
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <aside class="left-bar">
+            <header class="your-library" title="Your Library">
+                <button id="hamburger" class="hamburger-menu" aria-label="Toggle sidebar">
+                    <img id="collapse-hamburger" title="Press to Collapse" src="assets/images/yourlibrary.svg" alt="Your Library">
+                </button>
+                <span id="library-text">Your Library</span>
+            </header>
+
+            <main class="playlists-container">
+
+            </main>
+        </aside>
+        
+        <main class="main-content">
+            
+        </main>
+    </main>
+
+    <footer class="audio-player">
+        <div class="left-information"> <!-- Song info placeholder -->
+            <div class="song-name">
+                Click on a song to show Info
+            </div>
+            <div class="bottom-playlist-name">
+                Click to see Playlist
+            </div>
+        </div>
+        
+        <div class="middle-information">
+            <div class="control-buttons"> <!-- Custom controls -->
+                <img title = "Previous Song" id="prevButton" src = "assets/images/previous.svg">
+                <img title = "Pause/Play" id = "pausePlayButton" src = "assets/images/playsong.svg">
+                <img title = "Next Song" id="nextButton" src = "assets/images/next.svg">
+            </div>
+            
+            <div class="seek-bar-container">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="seek-bar" value="0" min="0" step="0.01" max = "100">
+                <audio id="audioPlayer" style="display: none;"></audio> <!-- Hidden audio element -->
+                <span id="totalTime">0:00</span>
+            </div>
+        </div>
+    
+        <div class="right-information"> <!-- Volume controls -->
+            <div class="volume-control">
+                <img id="volume-icon" title = "Press to Mute" class="volume-icon" src="assets/images/volume-medium.svg" alt="Volume Icon">
+                <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" value="0.5" step="0.01">
+            </div>
+            
+        </div>
+    
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
