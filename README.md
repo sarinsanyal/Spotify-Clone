@@ -4,8 +4,8 @@ Inspired by CWH's Web Development Project, using HTML, CSS and JS to make a clon
 **Version: 1.0.0**
 
 ## How to Use ##
-The songs are actually stored inside the assets/songs folder, which in turn stores playlists. To implement it on your own, clone this website, and use "localhost:3000" or "127.0.0.1:3000".
-Then, you can add/remove folders inside the **songs** folder under **assets**. The folders are automatically used as playlists inside the program.
+The songs are actually stored inside the songs folder, which in turn stores playlists. To implement it on your own, clone this website, and use "localhost:3000" or "127.0.0.1:3000".
+Then, you can add/remove folders inside the **songs** folder. The folders are automatically used as playlists inside the program.
 
 ## Features ##
 This includes: 
