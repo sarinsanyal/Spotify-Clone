@@ -1,7 +1,7 @@
 console.log("Spotify Clone Under Construction!");
 
 let selection = 0;
-let link = "http://127.0.0.1:3000/songs";
+let link = "songs";
 
 async function getPlaylists() {
     let site = await fetch(link);
